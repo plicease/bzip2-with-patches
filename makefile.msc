@@ -63,13 +63,13 @@ clean:
 
 
 $(PREFIX)\bin:
-	md $(PREFIX)\bin
+	md "$(PREFIX)\bin"
 
 $(PREFIX)\lib:
-	md $(PREFIX)\lib
+	md "$(PREFIX)\lib"
 
 $(PREFIX)\include:
-	md $(PREFIX)\include
+	md "$(PREFIX)\include"
 
 install: $(PREFIX)\bin $(PREFIX)\lib $(PREFIX)\include
 	cp *.exe $(PREFIX)\bin
